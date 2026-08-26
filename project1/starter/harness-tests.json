@@ -1,0 +1,29 @@
+{
+  "tests": [
+    {
+      "id": "t1_bug_report",
+      "prompt": "The checkout page crashes when I click the Pay button",
+      "expected": "Chatbot acknowledges the bug and asks for steps to reproduce or environment details — starts collecting missing info"
+    },
+    {
+      "id": "t2_bug_report_with_env",
+      "prompt": "Images are not loading on the product pages. I am using Chrome on Windows 11.",
+      "expected": "Chatbot acknowledges the bug, notes the environment provided, and asks for steps to reproduce"
+    },
+    {
+      "id": "t3_platform_question_covered",
+      "prompt": "What is your return policy?",
+      "expected": "Chatbot answers using FAQ content — items can be returned within 30 days if unused and in original packaging"
+    },
+    {
+      "id": "t4_platform_question_uncovered",
+      "prompt": "Do you price match with other stores?",
+      "expected": "Chatbot says this is not covered by the FAQ and directs the customer to call 1-800-555-0199"
+    },
+    {
+      "id": "t5_other_request",
+      "prompt": "I want to partner with your company",
+      "expected": "Chatbot politely says it cannot help with this and redirects to the human support line at 1-800-555-0199"
+    }
+  ]
+}

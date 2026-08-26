@@ -1,0 +1,30 @@
+Bug Report multi turn:
+
+Note: The model surfaces <thinking> blocks in its responses. This is a known behavior of the Nova Pro model and does not affect the correctness of the routing, bug report collection, or tool call behavior.
+
+---------------------------------------------------------------------------------
+
+starter student$ python chat.py
+Connected to harness support_chatbot (session 14e88176-d76f-43b1-9929-48bbe59a46f5-support-chat).
+Type a message, or 'quit' to exit.
+
+you> your app keeps on crashing any time i try uploading a photo
+bot> <thinking> This message indicates a problem with the app, which falls under the BUG REPORT category. I need to gather more information to create a bug report. First, I'll ask for a description of the bug. </thinking>
+
+Could you please describe what happens when the app crashes? For example, does it freeze, show an error message, or something else?
+
+you> I go to my profile, click on edit, then when i select a photo it crashes
+bot> <thinking> The customer has provided the steps to reproduce the bug. Next, I need to ask for their environment details. </thinking>
+
+Thank you for providing the steps. Could you please let me know which browser, operating system, and device you are using?
+
+you> i am using firefox on my samsung s4 ultra
+bot> <thinking> I now have all the required information: the description of the bug, the steps to reproduce it, and the customer's environment. I can now create the bug report. </thinking>
+
+
+[tool call] bugreports___create_bug_report
+<thinking> The bug report has been successfully created. I will now inform the customer of their ticket ID and that the engineering team will follow up. </thinking>
+
+Thank you for your report. Your ticket ID is a857bc12-815d-4e1e-bda3-87c8fe624115. Our engineering team will look into this issue and follow up with you as soon as possible.
+
+you> quit

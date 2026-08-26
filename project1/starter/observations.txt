@@ -1,0 +1,14 @@
+Evaluation Observations
+
+Script Modification Disclosure
+Modified `create_harness.py` to add `memory={"disabled": {}}` to both the `create_harness` and `update_harness` calls, as recommended by the course admin, to prevent long-term memory from contaminating test results across sessions.
+
+Evaluation Results
+Overall correctness score: 0.90
+
+The platform question and other request routes scored well across the board. For the bug report route, the test case where the customer provided their OS and browser upfront scored 1.0. The test case where the customer provided minimal information scored 0.5 and the model attempted to move toward ticket creation without collecting all required fields first.
+
+No prompts were misrouted. All messages were handled by the correct route.
+
+What I Would Change
+The routing logic performed well and would not be changed. The bug report collection rules would be tightened to more explicitly prevent the model from calling the tool before all three fields have been confirmed by the customer in their own words.
